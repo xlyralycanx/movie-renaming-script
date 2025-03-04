@@ -40,9 +40,9 @@ const catalogueSubs = async (dir) => { // Catalogues the subtitle files (obvious
                 const fileStat = fs.statSync(filePath);
                 if (fileStat.isDirectory()) {
                         fileList = await catalogueSubs(filePath);
-                }
+		}
                 else if ((file.toLowerCase().endsWith('.srt') || file.toLowerCase().endsWith('sub')) && fileStat.size > 400 && (rs.some(r => file.toLowerCase().includes(r)) || ex.English.some(x => file.toLowerCase().includes(x)) || ex.Forced.some(y => file.toLowerCase().includes(y))) && !file.toLowerCase().includes('sdh')) {
-                	await subs.push(filePath);
+                	await subs.push(filePath);                                                                                       // By default "SDH" subtitles for the hard of hearing, subtitles containing SFX captions, are binned. If you would like to keep them, remove this |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
                 }
 	}
 }
