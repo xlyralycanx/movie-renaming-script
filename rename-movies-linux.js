@@ -3,8 +3,8 @@ const path = require("path");
 
 // LyraLycan's movie renaming script FOR LINUX. Requires node-js. If it is not installed, use: apt-get update && apt upgrade -y \ apt install node-js
 // Designed to follow Emby's naming convention, preserves subtitles, logs errors if anything wasn't quite right.
-// Just put this in the same directory as the one the folder *containing the movies* is in, open the terminal to the same directory and type (without quotes) "node rename-movies-linux <source folder> <destination folder>".
-// Folder syntax is as follows: "destination folder/first character of movie/movie name and year/movie file. For show renaming, use rename-shows.js.
+// Just put this in a directory above the folder containing the movies (or don't and specify a path from root, I'm not your boss), open the terminal and type (without quotes) "node rename-movies-linux <source folder> <destination folder>".
+// Folder syntax is as follows: "destination folder/first character of movie/movie name and year/movie file.
 
 
 //The arrays this script needs.
