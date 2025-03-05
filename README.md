@@ -10,6 +10,7 @@ This script was originally designed to run on Windows, hence NodeJS, but I conve
 - <b>Extracts information</b> from source directory</br>
 - <b>Builds a new path</b> from the old</br>
 - <b>Moves</b> to the new home</br>
+- <b>Upgrades</b> if the movie exists and the new file is a higher resolution</br>
 - <b>Logs errors</b> and success information in ./logs/</br>
 - <b>Includes subtitles</b> that are forced (foreign only) or full, discards empty or placeholder subs</br>
 - <b>Refuses to run</b> if there is an issue</br>
