@@ -9,7 +9,7 @@ let eres;
 let cdc = 0;
 let pfc = 0;
 let rr;
-var log = './cleanup_log_' + new Date().toISOString().split('T')[0] + '.txt';
+var log = './logs/cleanup_log_' + new Date().toISOString().split('T')[0] + '.txt';
 
 const help = '\nFormat: <script.js> <target path> <arguments separated by a space>\n\nExamples:\n\tcleanlibrary.js "./New Downloads" subs thumbs\n\tResult: Iterates through all folders at path New Downloads and deletes subtitle and thumbnail files\n\n\tcleanlibrary.js "Video/New/Movies" all\n\tResult: Iterates through all folders at path Video/New/Movies and deletes images, subtitles and thumbnails\n\n\tcleanlibrary.js "Movies" resolution\n\tResult: Iterates through all folders at path Movies and leaves only the highest resolution video\n\nArguments:\n\tsubs = Removes subtitles\n\timages = Removes images\n\tthumbs = Removes .bif thumbnail files\n\tall = Removes all of the above (ignores video files)\n';
 
@@ -97,7 +97,7 @@ async function main() {
 		}
 	}
 	await batchClean(process.argv[2]);
-	if (pf.length > 0) {
+	if (pf.length > 0) { // The following block is a WIP that would use readline to ask the user for confirmation.
 		//var ans = prompt("This will delete " + pfc + " file" + (pfc == 1 ? '' : 's') + " from " + cdc + " director" + (cdc == 1 ? 'y' : 'ies') + ". Are you sure? (y/n)");
 		//if (ans != null) {
 		//	if (ans == 'y') {
