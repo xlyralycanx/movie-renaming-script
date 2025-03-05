@@ -18,5 +18,4 @@ This script was originally designed to run on Windows, hence NodeJS, but I conve
 - <b>Cannot</b> handle user permissions. Even if an issue arises due to lacking permissions, can be run again immediately after the issue is resolved and naming will be correct. (User needs destination rw and source rwx)</br>
 - <b>Cannot</b> use the internet to scrape information. It can only get data from the file's directory.</br>
 
-
-Also included here is 'cleanlibrary.js' - this allows the user to spritz a defined directory of subtitles, thumbnail files and/or images (by user definition), and automatically removes movie files, leaving the highest quality.
+</br><p>Also included here is 'cleanlibrary.js' - this allows the user to spritz a defined directory of subtitles, thumbnail files and/or images (by user definition), and automatically removes movie files, leaving the highest quality.
